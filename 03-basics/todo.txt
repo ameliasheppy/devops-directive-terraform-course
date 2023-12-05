@@ -1,0 +1,11 @@
+Walk throught the web app TF config
+-backend + provider config
+-EC2 instances
+-S3 bucket
+-VPC
+    -Subnet
+-Security groups and rules
+-ALB
+    -ALB target group and attachment
+-Route 53 zone and record
+-RDS instance 

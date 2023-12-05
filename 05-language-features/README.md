@@ -2,11 +2,12 @@
 
 The official documentation is the best reference for these: https://www.terraform.io/docs/language/index.html
 
-NOTE: ` ```py ` is used on code blocks to get highlighting since HCL isn't an allowable language. 
+NOTE: ` ```py ` is used on code blocks to get highlighting since HCL isn't an allowable language.
 
 ## Expressions
 
 ### Strings
+
 ```py
 "foo" # literal string
 
@@ -14,8 +15,9 @@ NOTE: ` ```py ` is used on code blocks to get highlighting since HCL isn't an al
 ```
 
 ### Operators
+
 ```py
-# Order of operations: 
+# Order of operations:
 !, - # (multiplication by -1)
 *, /, % # (modulo)
 +, - # (subtraction)
@@ -37,6 +39,7 @@ var.a != "" ? var.a : "default-a"
 ```
 
 ### Other expression types:
+
 - For expressions
 - Splat expressions
 - Dynamic blocks
@@ -44,6 +47,7 @@ var.a != "" ? var.a : "default-a"
 - Version constraints
 
 ## Functions
+
 ```py
 # Numeric
 abs()
@@ -54,6 +58,7 @@ max()
 parseint() # parse as integer
 pow()
 signum() # sign of number
+#hash and crypto
 
 # string
 chomp() # remove newlines at end
@@ -75,7 +80,9 @@ trimsuffix()
 trimspace()
 upper()
 ```
+
 ### Other function types:
+
 - Colleciton
 - Encoding
 - Filesystem
@@ -138,3 +145,8 @@ Sometimes an entity outside of terraform will automatically modify a resource (e
 #### prevent_destroy
 
 `prevent_destroy` provides an additional stopgap against accidentally destroying resources with terraform. If set to true, Terraform will reject any attempt to destroy that resource.
+
+<!-- Provisioners perform actions either locally or on a remote machine
+use Ansible, Chef, Puppet it your config to do stuff
+
+ -->

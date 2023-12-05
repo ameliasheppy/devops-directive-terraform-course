@@ -1,0 +1,24 @@
+set input vars by order of precedence lowest to highest
+manual entry during plan/apply_server_side_encryption_by_default
+default val in declaration cidr_blocks
+
+
+types for vals: string, numbers, bool
+
+complex types:
+list, set, map, obj, tuple
+
+validation can be done with type checking and custom conditions will be enforced
+
+mark sensitive as 
+sensitive = true
+
+pass to terraform apply withTV_VAR_variable
+-var (retrieved from secret manager at rt)
+
+can be used with external secret store like AWS Secrets manager
+
+or store in a GH actions secret
+
+avoid sensitive data in the config!!
+

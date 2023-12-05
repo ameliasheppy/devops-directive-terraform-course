@@ -1,0 +1,4 @@
+Install terraform -done!
+Authenticate to aws
+Hello World TF config
+Init, Plan, Apply, Destroy
